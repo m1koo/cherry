@@ -5,7 +5,12 @@ spring:
     encoding: UTF-8
 
 server:
-  port: 8080
+  port: 443
+  ssl:
+    key-store: classpath:b.jks
+    key-store-password: kmfd99y7
+    key-store-type: JKS
+    key-alias: alias
 
 logging:
   level:
